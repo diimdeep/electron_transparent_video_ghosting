@@ -22,15 +22,16 @@ app.on('ready', function() {
                                   minHeight: 150,
                                   x: 20,
                                   y: 20,
-                                  //frame: false,
-                                  transparent: false,
-                                  //resizable: false,
-                                  'title-bar-style': 'hidden'
+                                  // frame: false,
+                                  // transparent: false,
+                                  // resizable: false,
+                                  // 'title-bar-style': 'hidden'
                                 });
 
   // and load the index.html of the app.
-  opaque.loadUrl('file://' + __dirname + '/test.html');
-
+  opaque.loadURL('file://' + __dirname + '/test.html');
+  opaque.maximize();
+  
   transparent = new BrowserWindow({width: 620,
                                   height: 313,
                                   minWidth: 250,
@@ -44,7 +45,7 @@ app.on('ready', function() {
                                 });
 
   // and load the index.html of the app.
-  transparent.loadUrl('file://' + __dirname + '/test.html');
+  transparent.loadURL('file://' + __dirname + '/test.html');
 
 
   // if (process.env.NODE_ENV === 'development') {

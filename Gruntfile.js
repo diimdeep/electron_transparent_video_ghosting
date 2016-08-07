@@ -46,6 +46,9 @@ module.exports = function (grunt) {
         package_mac36: {
           cmd: 'node_modules/.bin/electron-packager app/ Test0.36.0 --platform=darwin --arch=x64 --version=0.36.0 --cache=.electron --out=build36/'
         },
+        package_mac132: {
+          cmd: 'node_modules/.bin/electron-packager app/ Test1.3.2 --platform=darwin --arch=x64 --version=1.3.2 --cache=.electron --out=build132/'
+        },
         package_win: {
           cmd: 'node_modules/.bin/electron-packager app/ Test --platform=win32 --arch=ia32 --version=0.33.4 --cache=.electron --out=build/ --icon=static/icon.ico'
         },

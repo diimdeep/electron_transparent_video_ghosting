@@ -2,10 +2,9 @@
 
 Demonstrates issue with transparent window and transparent webm video in Electron 0.36.0
 
-First `npm install`
+`npm install && grunt exec:package_mac35 exec:package_mac36 exec:package_mac132`
 
-Then on any platform run `grunt start`
 
-Or under Mac
-to build with 0.35.4 version with no issue `grunt exec:package_mac35`
-and to build with 0.36.0 version `grunt exec:package_mac36`
+- 0.35.4  - no issues
+- 0.36  - ghosting on transparent
+- 1.3.2 - still ghosting but different
